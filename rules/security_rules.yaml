@@ -1,0 +1,17 @@
+rules:
+  - rule_id: "RULE-001"
+    name: "Container Breakout Detection"
+    description: "Program attempting to access critical host files via bind mount tunnel."
+    target_keywords:
+      - "/host_root/etc/shadow"
+      - "/host_root/tmp"
+    action: "KILL"
+    severity: "CRITICAL"
+
+  - rule_id: "RULE-002"
+    name: "Sensitive Log Access"
+    description: "Program attempting to read host system logs."
+    target_keywords:
+      - "/host_root/var/log"
+    action: "ALERT"
+    severity: "HIGH"
