@@ -7,7 +7,7 @@ Warden-eBPF is a lightweight, low-level security observability tool built with C
 Before building this tool, I researched how container isolation (Namespaces, Cgroups, Chroot) actually works under the hood and how a simple bind mount misconfiguration can lead to a complete host compromise. 
 
 Read my full deep-dive research and the breakout methodology on Medium: 
-**[Insert Your Medium Article Link Here]**
+**https://medium.com/@iygoktas1/docker-is-an-illusion-building-a-container-from-scratch-in-c-8d10443ee8f0**
 
 ## System Architecture
 
